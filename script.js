@@ -36,6 +36,8 @@ menuItems.forEach(item => {
 });
 
 
+
+//History api applied
 class HistoryManager {
   back() {
     window.history.back();

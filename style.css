@@ -18,7 +18,7 @@ body {
     left: 0px;
     height: 100%;
     width: 160px;
-    background: #91cc97;
+    background: #11101d;
     transition: all 0.5s ease;
 }
 
@@ -76,10 +76,9 @@ nav ul li a .link_name {
 }
 
 nav ul li:hover {
-    background: rgb(74, 205, 82);
+    background: rgb(155, 228, 208);
     color: #111;
 }
-
 .btn {
     position: absolute;
     top: 32px;

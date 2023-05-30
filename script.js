@@ -2,6 +2,16 @@ document.querySelector(".btn").addEventListener("click", () => {
   document.querySelector(".navbar").classList.toggle("active");
 });
 
+const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+
+dropdownToggles.forEach(toggle => {
+    toggle.addEventListener('click', function(e) {
+        e.preventDefault();
+        this.classList.toggle('active');
+    });
+});
+
+
 //Dynamically rendering elements
 //Be able to generate the menu items from a JavaScript object
 

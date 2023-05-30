@@ -79,6 +79,7 @@ nav ul li:hover {
     background: rgb(155, 228, 208);
     color: #111;
 }
+
 .btn {
     position: absolute;
     top: 32px;
@@ -97,7 +98,8 @@ nav ul li:hover {
     font-size: 32px;
     color: #111;
 }
-.sidebar-text{
+
+.sidebar-text {
     position: relative;
     top: 0;
     color: rgb(22, 22, 22);
@@ -105,31 +107,71 @@ nav ul li:hover {
     font-weight: 400;
     margin-left: 10px;
 }
-.navbar.active{
+
+.navbar.active {
     left: -160px;
 }
-.content{
+
+.content {
     /*! margin-left: 300px; */
     display: flex;
     /*! align-items: center; */
     justify-content: center;
 }
+
 .btngroup {
     display: flex;
     justify-content: center;
     padding: 10px;
     margin: 10px;
 }
-button{
+
+button {
     padding: 10px;
     margin: 10px;
 }
 
 @media only screen and (max-width: 600px) {
-    .navbar{
-        left:-160px;
+    .navbar {
+        margin-left: 20px;
+        left: -160px;
+
     }
-    .navbar.active{
+
+    .navbar.active {
         left: 0;
     }
-  }
+}
+.dropdown-menu {
+    display: none;
+    background-color: #11101d;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 1;
+}
+
+.dropdown-menu li {
+    margin-bottom: 5px;
+}
+
+.dropdown-menu a {
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.dropdown-toggle .dropdown-icon {
+    margin-left: auto;
+}
+
+.dropdown-toggle.active .dropdown-icon {
+    transform: rotate(180deg);
+}
+
+.dropdown-toggle.active + .dropdown-menu {
+    display: block;
+    width: 90px;
+}

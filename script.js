@@ -14,7 +14,7 @@ const menuItems = [
 ];
 
 const menuContainer = document.getElementById('menuItems');
-const currentURL = window.location.href;
+
 
 menuItems.forEach(item => {
   const listItem = document.createElement('li');
@@ -35,6 +35,10 @@ menuItems.forEach(item => {
 
 });
 
+// Location Object
+let myurl = location.origin;
+console.log(myurl);
+console.log(location.href);
 
 
 //History api applied
